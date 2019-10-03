@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <!-- W3 css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="stylesheet/stylesheet.css">
+    <title>Frontend test</title>
+</head>
+    <body class="ct-font">
+        <!-- button to begin -->
+        <a id="button" class="button ct-button"></a>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light ct-navbar">
+            <div class="container ct-f">
+                <!-- Brand name -->
+                <div class="container-fluid">
+                    <a class="navbar-brand ct-f-grey ct-f-bold ct-f-spacing-x2 ct-f-size18" href="#">PLUTO</a>
+                    <!-- mobile menu -->
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- menu elements -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ct-f-bold">
+                        <!-- Home -->
+                        <li class="nav-item ct-padding-sides">
+                            <a class="nav-link ct-nopadding-sides" href="#">HOME</a>
+                        </li>
+                        <!-- About -->
+                        <li class="nav-item active ct-padding-sides ct-f-spacing">
+                            <a class="nav-link underline" href="#">ABOUT<span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- Portfolio -->
+                        <li class="nav-item ct-padding-sides ct-f-spacing" style="padding-right: 11px;">
+                            <div class="dropdown show">
+                                <a class="nav-link dropdown-toggle ct-nopadding-sides" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Blog -->
+                        <li class="nav-item ct-padding-sides">
+                            <a class="nav-link ct-nopadding-sides" href="#">BLOG</a>
+                        </li>
+                        <!-- Contact -->
+                        <li class="nav-item ct-padding-sides ct-f-spacing">
+                            <a class="nav-link ct-nopadding-sides" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <!-- Search field -->
+                    <div class="search" >
+                        <input type="text" placeholder=" ">
+                        <div>
+                            <svg>
+                                <use xlink:href="#path"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+                            <path d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562" transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)"></path>
+                        </symbol>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <!-- Page bar (?) "About" h1-->
+        <header >
+            <div class="card-header ct-bg-dark">
+                <div class="container ct-f">
+                    <div class="col ct-inline ct-f-grey">
+                        <!-- Page name -->
+                        <h1 class="ct-left ct-f-lightest">About us</h1>
+                        <!-- Breadcrumb -->
+                        <ul class="breadcrumb ct-bg-dark ct-right ct-bredcrumbs">
+                            <!-- Breadcrumb items -->
+                            <li class="breadcrumb-item ct-inline ct-font"><a href="#" class="ct-f-link">Home</a></li>
+                            <li class="breadcrumb-item ct-inline ct-font"><a href="#" class="ct-f-link">About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- first section "welcome to our company" h2-->
+        <div class="row ct-padding-introduction ">
+            <div class="container">
+                <div class="row justify-content-center ct-padding" style="padding-bottom: 23px">
+                    <!-- image -->
+                    <div class="col-md-6 img-introduce">
+                        <img src="img/posts-Teste.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col ct-f ct-f-grey ct-centering">
+                        <!-- title -->
+                        <h4 class="ct-f-bold ct-f-dark ct-f-spacing ct-padding-bottom">Welcome to our company</h4>
+                        <!-- text -->
+                        <p class="ct-f-size14">Curabitur at orci molestie, aliquet libero sed, vehicula odio. Proin lobortis consectetur fermentum.
+                            Pellentesque ut risus maximus, maximus odio ut, feugiat magna. Quisque faucibus euismod est, at fringilla lectus sollicitudin vitae.
+                            Morbi odio diam, rutrum non massa et, ultricies posuere lacus. Nullam pellentesque ultrices ultrices. Aliquam quis mauris lectus.
+                            Nam quis purus risus. Proin varius magna urna, quis molestie lacus sollicitudin nec. Sed efficitur accumsan dolor, sed elementum libero condimentum in.
+                            Phasellus vulputate hendrerit nulla, eget lobortis augue. Aliquam ac lacus id nunc maximus ultricies et ullamcorper justo.
+                            Donec pharetra nibh urna, id dignissim enim porttitor et. Aenean odio risus, dictum non tellus quis, cursus feugiat orci.
+                            Suspendisse potenti. In hac habitasse platea dictumst.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second section "Our services" h2 -->
+        <div class="row ct-bg-light ct-padding-section-body">
+            <div class="container">
+                <!-- Head of section -->
+                <div class="row ct-f ct-padding-section-header">
+                    <div class="col ct-f-grey ct-f-center">
+                        <!-- section name -->
+                        <h2 class="ct-f-light ct-f-spacing-x1 ct-padding-section">OUR SERVICES</h2>
+                        <!-- title and description -->
+                        <!-- title -->
+                        <h3 class="ct-f-dark">What can we do for you?</h3>
+                        <!-- description -->
+                        <p class="ct-f-size18">
+                                Proin ut justo et velit rhoncus aliquam. Nunc odio augue, condimentum id nibh sit amet, molestie vestibulum eros.
+                                Nunc viverra, enim non hendrerit faucibus, mauris turpis tempus risus, eu rhoncus lacus elit nec nisi.
+                                Aenean nec sodales lorem, in interdum mi. Vestibulum felis arcu, maximus facilisis blandit et, tempus nec urna.
+                            </p>
+                    </div>
+                </div>
+                <!-- Listing -->
+                <div class="row ct-f-grey ct-padding-services">
+                    <ul class="row ct-padding-sides ct-padding-topbottom">
+                        <li class="col-md">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="ct-icon">
+                                    <div class="col ct-bg-orange ct-f-lightest ct-circle">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="col-md ct-f">
+                                    <!-- Point title -->
+                                    <h4 class="ct-f-bold ct-f-dark ct-f-spacing">
+                                        Brand creation
+                                    </h4>
+                                    <!-- Description -->
+                                    <p class="ct-f-size14">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat urna sed sapien malesuada, et accumsan erat dictum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="ct-icon">
+                                    <div class="col ct-bg-orange ct-f-lightest ct-circle">
+                                        <i class="fa fa-asterisk"></i>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="col ct-f">
+                                    <!-- Point title -->
+                                    <h4 class="ct-f-bold ct-f-dark ct-f-spacing">
+                                        Interface design
+                                    </h4>
+                                    <!-- Description -->
+                                    <p class="ct-f-size14">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat urna sed sapien malesuada, et accumsan erat dictum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="ct-icon">
+                                    <div class="col ct-bg-orange ct-f-lightest ct-circle">
+                                        <i class="fa fa-trophy"></i>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="col ct-f">
+
+                                    <!-- Point title -->
+                                    <h4 class="ct-f-bold ct-f-dark ct-f-spacing">
+                                        Graphic design
+                                    </h4>
+                                    <!-- Description -->
+                                    <p class="ct-f-size14">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam volutpat urna sed sapien malesuada, et accumsan erat dictum.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="row ct-padding-sides ct-padding-topbottom">
+                        <li class="col-md">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="ct-icon">
+                                    <div class="col ct-bg-orange ct-f-lightest ct-circle">
+                                        <i class="fa fa-gear"></i>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="col ct-f">
+                                    <!-- Point title -->
+                                    <h4 class="ct-f-bold ct-f-dark ct-f-spacing">
+                                        Web development
+                                    </h4>
+                                    <!-- Description -->
+                                    <p class="ct-f-size14">
+                                        Donec auctor, mi vel feugiat porta, leo mauris vestibulum quam, quis placerat felis nisl et diam. Vivamus fermentum libero at dapibus vulputate.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="ct-icon">
+                                    <div class="col ct-bg-orange ct-f-lightest ct-circle">
+                                        <i class="fa fa-thumbs-up ct-f-smaller"></i>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="col ct-f">
+
+                                    <!-- Point title -->
+                                    <h4 class="ct-f-bold ct-f-dark ct-f-spacing">
+                                        Online marketing
+                                    </h4>
+                                    <!-- Description -->
+                                    <p class="ct-f-size14">
+                                        Donec auctor, mi vel feugiat porta, leo mauris vestibulum quam, quis placerat felis nisl et diam. Vivamus fermentum libero at dapibus vulputate.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md">
+                            <div class="row">
+                                <!-- icon -->
+                                <div class="ct-icon">
+                                    <div class="col ct-bg-orange ct-f-lightest ct-circle">
+                                        <i class="fa fa-file-text ct-f-smaller"></i>
+                                    </div>
+                                </div>
+                                <!-- content -->
+                                <div class="col ct-f">
+                                    <!-- Point title -->
+                                    <h4 class="ct-f-bold ct-f-dark ct-f-spacing">
+                                        Information visualization
+                                    </h4>
+                                    <!-- Description -->
+                                    <p class="ct-f-size14">
+                                        Donec auctor, mi vel feugiat porta, leo mauris vestibulum quam, quis placerat felis nisl et diam.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- third section "Out capabilities" h2 -->
+        <div class="row ct-padding-section-body ct-padding-capabilities">
+            <div class="container">
+                <!-- Head of section -->
+                <div class="row ct-f ct-f-center ct-padding-section-header">
+                    <div class="col ct-f-grey">
+                        <!-- section name -->
+                        <h2 class="ct-f-light ct-f-spacing-x1 ct-padding-section">OUR CAPABILITIES</h2>
+                        <!-- tittle -->
+                        <h3 class="ct-f-dark ct-margin-bottom">Things we are good at</h3>
+                    </div>
+                </div>
+                <!-- accordion -->
+                <div class="row ct-f ct-padding-progress-row">
+                    <div class="col-md-6 ct-f-grey">
+                        <div class="accordion" id="accordionExample">
+                            <!-- First card -->
+                            <div class="container ct-nopadding-sides">
+                                <div class="" id="headingOne">
+                                    <div class="mb-0 ct-f-dark">
+                                        <!-- Card Name -->
+                                        <button class="btn row" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <!-- icon -->
+                                            <i>
+                                                <i class="ct-icon-collapse"></i>
+                                            </i>
+                                            <i class="col ct-f ct-f-size18 ct-f-bold ct-f-spacing" style="padding-left: 10px;">Problems solving</i>
+
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Card Description -->
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <p class="card-body ct-f ct-f-size14">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <!-- Second card -->
+                            <div class="container ct-nopadding-sides">
+                                <div class="" id="headingTwo">
+                                    <div class="mb-0 ct-f-dark">
+                                        <!-- Card Name -->
+                                        <button class="btn row collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <!-- icon -->
+                                            <i>
+                                                <i class="ct-icon-collapse ct-f-smaller"></i>
+                                            </i>
+                                            <i class="col ct-f ct-f-size18 ct-f-bold ct-f-spacing" style="padding-left: 10px;">Systems monitoring</i>
+
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Card Description -->
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <p class="card-body ct-f ct-f-size14" style="padding-left: 25px; padding-top: 0;">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 2 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <!-- Third card -->
+                            <div class="container ct-nopadding-sides">
+                                <div class="" id="headingThree">
+                                    <div class="mb-0 ct-f-dark">
+                                        <!-- Card Name -->
+                                        <button class="btn row collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            <!-- icon -->
+                                            <i>
+                                                <i class="ct-icon-collapse ct-f-smaller"></i>
+                                            </i>
+                                            <i class="col ct-f ct-f-size18 ct-f-bold ct-f-spacing" style="padding-left: 10px;">Affect management</i>
+
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Card Description -->
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <p class="card-body ct-f ct-f-size14" style="padding-left: 25px; padding-top: 0;">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                    </p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Progress bar -->
+                    <div class="col ct-f-grey ct-padding-progress">
+                        <!-- first bar -->
+                        <div class="ct-padding-progress-top">
+                            <div class="row container ct-grid ct-f">
+                                <div class="ct-inline">
+                                    <p class="ct-left ct-f-dark">
+                                        PHOTOSHOP
+                                    </p>
+                                    <p class="ct-right ct-f-grey ct-f-level">
+                                        Pro
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="progress ct-bar">
+                                <div class="progress-bar ct-bg-dark" role="progressbar" style="width: 96%" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <!-- second bar -->
+                        <div class="ct-padding-progress-top">
+                            <div class="row container ct-grid ct-f">
+                            <div class="ct-inline">
+                                <p class="ct-left ct-f-dark">
+                                ILLUSTRATOR
+                            </p>
+                                <p class="ct-right ct-f-grey ct-f-level">
+                                Very good
+                            </p>
+                            </div>
+                        </div>
+                            <div class="progress ct-bar">
+                            <div class="progress-bar ct-bg-dark" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        </div>
+
+                        <!-- third bar -->
+                        <div class="ct-padding-progress-top">
+                            <div class="row container ct-grid ct-f">
+                            <div class="ct-inline">
+                                <p class="ct-left ct-f-dark">
+                                    INDESIGN
+                                </p>
+                                <p class="ct-right ct-f-grey ct-f-level">
+                                    Good
+                                </p>
+                            </div>
+                        </div>
+                            <div class="progress ct-bar">
+                            <div class="progress-bar ct-bg-dark" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        </div>
+
+                        <!-- fourth bar -->
+                        <div class="ct-padding-progress-top">
+                            <div class="row container ct-grid ct-f">
+                            <div class="ct-inline">
+                                <p class="ct-left ct-f-dark">
+                                    AFTER EFFECTS
+                                </p>
+                                <p class="ct-right ct-f-grey ct-f-level">
+                                    Average
+                                </p>
+                            </div>
+                        </div>
+                            <div class="progress ct-bar">
+                            <div class="progress-bar ct-bg-dark" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fourth section slider -->
+        <div class="row ct-bg-dark ct-f-grey">
+            <!-- Slider Contents -->
+            <!-- left arrow -->
+            <div class="row align-items-center ct-pointer ct-arrow">
+                <div class="col ct-f-lightest ct-f-biggest left" id="a-left">&#10094;</div>
+            </div>
+            <div class="container">
+                <div class="row ct-margin-slider">
+                    <div class="col ct-padding-slider">
+                        <!-- First Slide Content -->
+                        <div class="mySlides ct-f-center">
+                            <h3 class="ct-f-lightest ct-f-slide">Typography at its best is a visual form of language linking timelessness and time.</h3>
+                            <p class="ct-f-violet ct-f-spacing-x1">ROBERT BRINGHURST</p>
+                        </div>
+                        <!-- Second Slide Content -->
+                        <div class="mySlides ct-f-center">
+                            <h3 class="ct-f-lightest ct-f-slide">Typography at its best is a visual form of language linking timelessness and time.</h3>
+                            <p class="ct-f-violet ct-f-spacing-x1">ROBERT BRINGHURST THE SECOND</p>
+                        </div>
+                        <!-- Third Slide Content -->
+                        <div class="mySlides ct-f-center">
+                            <h3 class="ct-f-lightest ct-f-slide">Typography at its best is a visual form of language linking timelessness and time.</h3>
+                            <p class="ct-f-violet ct-f-spacing-x1">ROBERT BRINGHURST THE THIRD</p>
+                        </div>
+                        <!-- Slider -->
+                        <div class="ct-f-center row justify-content-center">
+                            <div class="ct-padding-dots">
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white ct-padding-dot" onclick="currentDiv(1)"></span>
+                            </div>
+                            <div class="ct-padding-dots">
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white ct-padding-dot" onclick="currentDiv(2)"></span>
+                            </div>
+                            <div class="ct-padding-dots">
+                                <span class="w3-badge demo w3-border w3-transparent w3-hover-white ct-padding-dot" onclick="currentDiv(3)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- right arrow -->
+            <div class="row align-items-center float-right ct-pointer ct-arrow">
+                <div class="col ct-f-lightest ct-f-biggest right" id="a-right">&#10095;</div>
+            </div>
+        </div>
+
+        <!-- fifth section "Our team" h2 -->
+        <div class="row ct-padding-section-body">
+            <div class="container">
+                <!-- Head of section -->
+                <div class="row ct-f-center ct-padding-section-header">
+                    <div class="col  ct-f-grey ct-f">
+                        <!-- section name -->
+                        <h2 class="ct-f-light ct-f-spacing-x1 ct-padding-section">OUR TEAM</h2>
+                        <!-- tittle -->
+                        <h3 class="ct-f-dark ct-margin-bottom">The right people</h3>
+                    </div>
+                </div>
+                <!-- Listing of members -->
+                <div class="row ct-f-grey justify-content-center ct-padding-members">
+                    <!-- one image item -->
+                    <div class="col-md-3">
+                        <!-- img -->
+                        <div class="img-member">
+                            <img class="img" src="img/member.png" alt="">
+                        </div>
+                        <!-- content -->
+                        <div class="ct-f">
+                            <!-- name of worker -->
+                            <p class="ct-f-bold ct-f-dark ct-f-size18 ct-f-spacing ct-member">
+                                Robert Judd
+                            </p>
+                            <!-- position -->
+                            <p class="ct-f-light ct-f-spacing-x1">
+                                CEO
+                            </p>
+                            <hr class="ct-bg-light">
+                            <!-- social icons-->
+                            <div class="ct-f-light ct-f-size18">
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-linkedin-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- img item-->
+                    <div class="col-md-3">
+                        <!-- img -->
+                        <div class="img-member">
+                            <img class="img" src="img/member.png" alt="">
+                        </div>
+                        <!-- content -->
+                        <div class="ct-f">
+                            <!-- name of worker -->
+                            <p class="ct-f-bold ct-f-dark ct-f-size18 ct-f-spacing ct-member">
+                                Eva Barnes
+                            </p>
+                            <!-- position -->
+                            <p class="ct-f-light ct-f-spacing-x1">
+                                DESIGNER
+                            </p>
+                            <hr class="ct-bg-light">
+                            <!-- social icons-->
+                            <div class="ct-f-light ct-f-size18">
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-linkedin-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- img item-->
+                    <div class="col-md-3">
+                        <!-- img -->
+                        <div class="img-member">
+                            <img class="img" src="img/member.png" alt="">
+                        </div>
+                        <!-- content -->
+                        <div class="ct-f">
+                            <!-- name of worker -->
+                            <p class="ct-f-bold ct-f-dark ct-f-size18 ct-f-spacing ct-member">
+                                Eugene Fletcher
+                            </p>
+                            <!-- position -->
+                            <p class="ct-f-light ct-f-spacing-x1">
+                                DEVELOPER
+                            </p>
+                            <hr class="ct-bg-light">
+                            <!-- social icons-->
+                            <div class="ct-f-light ct-f-size18">
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-linkedin-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- img item -->
+                    <div class="col-md-3">
+                        <!-- img -->
+                        <div class="img-member">
+                            <img class="img" src="img/member.png" alt="">
+                        </div>
+                        <!-- content -->
+                        <div class="ct-f">
+                            <!-- name of worker -->
+                            <p class="ct-f-bold ct-f-dark ct-f-size18 ct-f-spacing ct-member">
+                                Janet McKenzie
+                            </p>
+                            <!-- position -->
+                            <p class="ct-f-light ct-f-spacing-1x">
+                                SUPPORT
+                            </p>
+                            <hr class="ct-bg-light">
+                            <!-- social icons-->
+                            <div class="ct-f-light ct-f-size18">
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="ct-f-link-social"><i class="fa fa-linkedin-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sixth section "Our clients" h2 -->
+        <div class="row ct-bg-light ct-padding-section-body">
+            <div class="container">
+                <div class="row justify-content-center ct-padding-section-header">
+                    <!-- title part with description -->
+                    <div class="col ct-centering">
+                        <!-- Head of section -->
+                        <div class="row ct-f ct-padding-sides">
+                            <div class="col ct-f-grey">
+                                <!-- section name -->
+                                <h2 class="ct-f-light ct-f-spacing-x1 ct-padding-section">OUR CLIENTS</h2>
+                                <!-- title -->
+                                <h3 class="ct-f-dark">Meet our happy customers</h3>
+                                <!-- description -->
+                                <p class="ct-f-size14">
+                                    Proin ut justo et velit rhoncus aliquam. Nunc odio augue, condimentum id nibh sit amet, molestie vestibulum eros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- clients img -->
+                    <div class="col-9 ct-padding-clients">
+                        <!-- first row of img -->
+                        <div class="row ct-padding-clients-row">
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row ct-padding-clients-row">
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                            <div class="ct-img">
+                                <img class="img" src="img/wide.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- selling field -->
+        <div class="row">
+            <div class="container">
+                <div class="row ct-f-grey ct-f-center justify-content-center ct-padding-callaction-row">
+                    <p class="ct-f-dark col-md-4 ct-callaction">
+                        Like what you see? Buy this template!
+                    </p>
+                    <div class="ct-f-dark col-md-2 ct-padding-callaction">
+                        <a href="#" class="ct-f-spacing-x1 ct-f-bold" >TAKE MY MONEY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- seventh section footer -->
+        <footer>
+            <!-- navbar with social media icons and newsletter -->
+            <nav class="navbar navbar-expand-lg navbar-light ct-bg-dark">
+                <div class="container ct-f-grey ct-follow">
+                    <!-- social media icons -->
+                    <div class="col-md-5 ct-icon-social">
+                        <!-- follow us -->
+                        <p class="navbar-text ct-f-violet ct-f-spacing-x1 ct-f-bold ct-font">
+                            FOLLOW US
+                        </p>
+                        <div class="col-3 align-items-start fa ct-icon-social ct-icon-social-in">
+                            <!-- icon -->
+                            <div class="ct-icon-item">
+                                <div class="ct-bg-violet-darker ct-circle ct-c-big">
+                                    <a href="#" class="ct-pointer ct-f-link-lightest"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                            <!-- icon -->
+                            <div class="ct-icon-item">
+                                <div class="ct-bg-violet-darker ct-circle ct-c-big">
+                                    <a href="#" class="ct-pointer ct-f-link-lightest"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="ct-icon-item">
+                                <div class="ct-bg-violet-darker ct-circle ct-c-big">
+                                    <a href="#" class="ct-pointer ct-f-link-lightest"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="ct-icon-item">
+                                <div class="ct-bg-violet-darker ct-circle ct-c-big">
+                                    <a href="#" class="ct-pointer ct-f-link-lightest"><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- newsletter -->
+                    <div class="col-md-7 ct-newsletter-right">
+                        <form class="row form-inline ct-f float-right">
+                            <div class="ct-newsletter">
+                                <p class="navbar-text ct-f-opacity ct-f-light ct-f-spacing-x1 ct-f-bold">
+                                    GET THE NEWSLETTER
+                                </p>
+                                <input class="form-control mr-sm-2 ct-bg-violet col-md-4" size="88" width="254" height="39" type="email" placeholder="Your email address" aria-label="Your email address" style="border:none;">
+                                <button class="btn my-2 my-sm-0 ct-button ct-f-spacing-x1" type="submit">SUBSCRIBE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <!-- lowest part of footer -->
+            <div class="row ct-bg-darker">
+                <div class="container">
+                    <div class="row ct-f-grey ct-padding ct-margin-footer">
+                        <!-- Brand logo and name -->
+                        <div class="col ct-f-opacity ct-f">
+                            <div class="container">
+                                <div class="row ct-f-bold ct-f-size18 ct-f-spacing-x2">
+                                    PLUTO
+                                </div>
+                                <div class="row ct-f-size14 ct-padding-top">
+                                    <p>
+                                        Made with love by kripalser
+                                    </p>
+                                    <p>
+                                        &copy; 2013
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact us -->
+                        <div class="col ct-f">
+                            <div class="container">
+                                <div class="row ct-f-bold ct-f-spacing-x1 ct-padding-bottom">
+                                    CONTACT US
+                                </div>
+                                <div class="row">
+                                    <div class="col ct-f-lighter">
+                                        <!-- mail -->
+                                        <div class="row">
+                                            <a href="mailto:hello@example.com" class="ct-f-link-orange ct-f-size18 ct-f-spacing">hello@example.com</a>
+                                        </div>
+                                        <!-- address -->
+                                        <div class="row ct-f-lighter ct-f-size14">
+                                            <p>
+                                                121 King Street, Melbourne<br> Victoria 3000 Australia
+                                            </p>
+                                            <p>
+                                                Phone: <a href="tel:+61-3-8376-6284" class="ct-f-lighter">+61 3 8376 6284</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Recent Tweet -->
+                        <div class="col ct-f-grey ct-f">
+                            <div class="container">
+                                <div class="row ct-f-bold ct-f-spacing-x1 ct-padding-bottom">
+                                    RECENT TWEET
+                                </div>
+                                <div class="row ct-f-bold ct-f-opacity" style="font-size: 11px; letter-spacing: 1.1px;margin-top:4px; margin-bottom: 2px">
+                                    DECEMBER 3
+                                </div>
+                                <div class="row ct-f-lighter">
+                                    <p class="ct-f-size14">
+                                        Testing 1, 2, 3. We've just launched version 1 of our new Envato<br>
+                                        Marketplaces Hub! Let us know what you think :)
+                                        <a href="http://envatomarketplaces.com" class="ct-f-link-orange">http://envatomarketplaces.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Photostream -->
+                        <div class="col ct-f-grey ct-f">
+                                <div class="row">
+                                    <div class="col ct-f-spacing-x1 ct-f-bold ct-padding-bottom">
+                                        PHOTOSTREAM
+                                    </div>
+                                </div>
+                                <!-- images -->
+                                <div class="row" style="padding-top: 7px">
+                                    <div class="ct-photo">
+                                        <img src="img/member.png" class="img" alt="">
+                                    </div>
+                                    <div class="ct-photo">
+                                        <img src="img/member.png" class="img" alt="">
+                                    </div>
+                                    <div class="ct-photo">
+                                        <img src="img/member.png" class="img" alt="">
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom_js/scripts.js"></script>
+    </body>
+</html>

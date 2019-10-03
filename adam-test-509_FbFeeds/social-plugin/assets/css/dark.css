@@ -1,0 +1,139 @@
+li{
+    list-style-type: none;
+}
+.invisible{
+    display: none;
+}
+.Emoji{
+    width: 14px;
+}
+/* Twitter feed widget light-large*/
+
+.ct-tweet-widget{
+    width: 520px;
+    border-radius: 5px;
+    background: #2a3338;
+}
+.ct-tweet-widget-header{
+    padding: 10px;
+    margin-top: 20px;
+}
+.ct-widget-post{
+    padding-bottom: 10px;
+}
+.ct-widget-posts{
+    margin: 0 0;
+}
+.ct-widget-footer{
+    height: 40px;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 450px){
+    .ct-tweet-widget{
+        width: 100%;
+    }
+}
+.twitter-timeline-link{
+    font: normal normal 14px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    font-weight: 600;
+}
+.twitter-timeline-link:link, .twitter-timeline-link:visited{
+    color:#2b7bb9 !important;
+}
+.twitter-timeline-link:hover{
+    color: #30b3ff !important;
+}
+.twitter-hashtag{
+    font: normal normal 14px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    font-weight: 600;
+}
+.twitter-hashtag:link, .twitter-hashtag:visited{
+    color:#2b7bb9 !important;
+}
+.twitter-hashtag:hover{
+    color: #30b3ff !important;
+}
+.ct-brand-logo{
+    float: right;
+    font-size: 20px;
+    color: rgba(160, 171, 189, 0.79);
+    padding-right: 8px;
+}
+#ct-hover:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+#ct-hover:hover i{
+    color: rgb(237, 246, 255);
+}
+#ct-hover:hover time{
+    color: rgb(237, 246, 255);
+}
+
+.ct-post-header{
+    display: inline-flex;
+}
+.ct-tw-av-img{
+    border-radius: 30%;
+    width: 50px
+}
+.ct-tweet-avatar{
+    display: inline-block;
+}
+.ct-username{
+    display: inline-block;
+    font: normal normal 18px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+    padding-top: 20px;
+    padding-left: 8px;
+    color: #f4f4f4;
+}
+.ct-tweet-date{
+    font: normal normal 14px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    float: right;
+    font-size: 12px;
+    color: #888888;
+    padding-right: 10px;
+}
+.ct-post-content{
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    color: #f4f4f4;
+}
+.ct-tweet-text{
+    font: normal normal 14px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    font-weight: 600;
+}
+.ct-feed-line{
+    margin: 0 0;
+    background-color: #7a7a73;
+}
+.ct-tweet-feed{
+    padding: 10px 10px;
+}
+.ct-widget-headline{
+    margin: 0 0;
+    font-weight: 500;
+    color: #f4f4f4;
+}
+.ct-footer{
+    font-weight: normal;
+    font-size: 13px;
+    float: right;
+    padding-right: 8px;
+    padding-top: 5px;
+}
+.ct-tag-name{
+    font-size: 15px;
+}
+.ct-tweet-img{
+    border-radius: 1%;
+}
+.ct-author-link:link, .ct-author-link:visited{
+    color: #f4f4f4;
+}
+.ct-author-link:hover{
+    color: #30b3ff !important;
+}

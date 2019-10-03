@@ -1,0 +1,32 @@
+a {
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+img{
+    box-shadow: none!important;
+}
+.ct-fb{
+    text-align: right;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    padding: 8px 6px;
+    margin: 2px;
+    color: #ffffff;
+    background-color: #3b5998!important;
+    font-size: 43px !important;
+}
+.ct-tw{
+    text-align: center;
+    vertical-align: middle;
+    width: 48px;
+    height: 48px;
+    padding: 8px 0;
+    margin: 2px;
+    color: #ffffff;
+    background-color: #1da1f2!important;
+    font-size: 32px !important;
+}
+.ct-round{
+    border-radius: 25%;
+}
